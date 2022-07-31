@@ -24,6 +24,7 @@ const ProductDetails = ({products, product}) => {
                                     "small-image selected-image" : 
                                     "small-image"
                                 }
+                                key={i}
                                 onMouseEnter={() => setIndex(i)}
                             />
                         ))}
@@ -52,7 +53,7 @@ const ProductDetails = ({products, product}) => {
                             <span className='minus' onClick={decQty}>
                                 <AiOutlineMinus/>
                             </span>
-                            <span className='num' onClick=''>
+                            <span className='num'>
                                 {qty}
                             </span>
                             <span className='plus' onClick={incQty}>
