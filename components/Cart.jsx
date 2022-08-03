@@ -9,7 +9,7 @@ import getStripe from '../lib/getStripe'
 const Cart = () => {
   const cartRef = useRef()
   const {totalQuantities, totalPrice, cartItems, setShowCart, toggleCartItemQuantity, onRemove} = useStateContext()
-
+  
   const handleCheckout = async () => {
     const stripe = await getStripe()
 
